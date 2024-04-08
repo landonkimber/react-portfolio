@@ -1,12 +1,13 @@
-import './App.css';
+import "./App.css";
 
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
-import { Outlet } from 'react-router-dom';
-import Navbar from './components/NavBar.jsx';
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: "/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -17,6 +18,7 @@ function App() {
       <div className="flex-column justify-center align-center min-100-vh bg-primary">
         <Outlet />
       </div>
+      <Footer />
     </ApolloProvider>
   );
 }
