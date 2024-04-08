@@ -12,7 +12,7 @@ const Projects = () => {
       description:
         "This is my react portfolio website. You are currently looking at it!",
       image: portfolioImage,
-      link: "https://github.com/landonkimber/react-portfolio",
+      link: "https://66136a5819634e42fc18b784--bejewelled-dusk-d2cecf.netlify.app/projects",
       githubRepo: "https://github.com/landonkimber/react-portfolio",
     },
     {
