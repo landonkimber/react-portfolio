@@ -1,53 +1,53 @@
-# MERN template project
+# react-portfolio
 
-[GithubTemplate](https://github.com/kdorland/mern-template)
+## Description
 
-## Introduction
-This project is a template for building fullstack JavaScript applications running on node.js. The technology stack is as follows:
-- **React** for the front-end, bootstrapped with "Create React App".
-- **express.js** for the server
-  - Serves the React app 
-  - Provides the JSON API for the React app using http
+This is a portfolio that was made by and made for Landon Kimber. This portfolio page in particular was made using React for the frontend.
 
-MongoDB is not used in this template but can be easily integrated into the server app. If you want to see an example of how to use MongoDB using Mongoose with this template, have a look in the "mongoose" branch.
+## Table of Contents
 
-The app is fully deployable to any PaaS like Heroku or AWS Elastic Beanstalk that understands how to build and run projects with a **package.json** file. 
+- [Project Title](#project-title)
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Contributions](#contributions)
+- [Contact](#contact)
 
-## Commands
-The package.json provides all the commands needed to test and run this application.
-- **npm install** install all dependencies for the server and the client.
-- **npm run build** builds the static files for the React app.
-- **npm start** starts the complete MERN app.
-- **npm run react-dev** starts the React app in development mode on http://localhost:3000. Only works if the server is started separately. Alternatively you can just use `npm start` from the client folder.
+## Contributions
 
-## Development
-Use this template to build your own apps. Since the React app is build using Create React App, you can easily update the React version.
+This page was made using various dependencies for client side deployment including,
 
-During development of the React app, use **npm run react-dev** or simply navigate to the client folder and run **npm start**. Remember you need the server running as well for it to work.
+Vite: https://vitejs.dev/
+React: https://react.dev/
+Autoprefixer: https://www.npmjs.com/package/autoprefixer
+Tailwind: https://tailwindcss.com/
+ESLint: https://eslint.org/
 
-If you want reload-functionality for the server code, I recommend using something like [nodemon](https://www.npmjs.com/package/nodemon). You can then navigate to the server folder and start it using **nodemon src/index.js**. 
+## License
 
-Before deploying, build and start the app, and test that everything works on http://localhost:8080. The react app should open when you visit http://localhost:8080 in the browser and the API should be available on http://localhost:8080/api/.
+MIT License
 
-## Configuration
-The app opens on port 8080 by default. If the environment variable **PORT** is set, that port will be used instead.
+Copyright (c) 2024 Landon Kimber
 
-In production mode, the React app expects to find the API on the same port as itself on the `/api` path. In development mode, the React app expects to find the api on http://localhost:8080/api/ instead. You can change this behaviour in the React `.env` files.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Server implementation
-It's worth noting that a few tricks are used in the server implementation to concurrently serve the http REST API and the React app.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-By default when the express.js server receives a request, it tries to match it with one of the API routes. If none matches it serves one of the static files instead. If none of those matches it serves the React index.html file. This enables client-side routing in the React app (with React Router or similar library) without overriding the server API or hiding any of the other static assets.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Relevant code snippets from `server.js`:
-```js
-  // Serve the static files
-  app.use(express.static(path.resolve('..', 'client', 'build'))); 
-```
+## Contact
 
-```js
-  // "Redirect" all non-API GET requests to React's entry point (index.html)
-  app.get('*', (req, res) =>
-    res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
-  );
-```
+Created by Landon Kimber
+Email: landonkimber33@gmail.com
+Github Profile: https://github.com/landonkimber

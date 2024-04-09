@@ -1,8 +1,6 @@
 import { useLocation } from "react-router-dom";
 
 function NotFound() {
-  let location = useLocation();
-
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-orange-500 to-rose-600">
       <div className="text-center">
