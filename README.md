@@ -17,9 +17,13 @@ This is a portfolio that was made by and made for Landon Kimber. This portfolio 
 This page was made using various dependencies for client side deployment including,
 
 Vite: https://vitejs.dev/
+
 React: https://react.dev/
+
 Autoprefixer: https://www.npmjs.com/package/autoprefixer
+
 Tailwind: https://tailwindcss.com/
+
 ESLint: https://eslint.org/
 
 ## License

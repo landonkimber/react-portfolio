@@ -20,7 +20,7 @@ const Projects = () => {
       description:
         "This is a journaling app that allows users to write daily affirmations. This was a group project that I worked on with other developers.",
       image: affirmImage,
-      link: "",
+      link: "https://affirm.onrender.com/welcome-back",
       githubRepo:
         "https://github.com/hyrumsdolan/Untitled-Affirmation-Journal/",
     },
