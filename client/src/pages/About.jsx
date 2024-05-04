@@ -27,9 +27,9 @@ const About = () => {
               fly-fishing, skiing, backpacking, camping, and anything else
               that'll let me breathe the cold fresh mountain air. Aside's from
               outdoors, I do also very much enjoy watching the NBA, playing
-              video games, but most of all, sleeping! Please take a look around
-              this site for references for my current work and progress within
-              the beautiful world of web development!
+              video games, and of course, coding! Please take a look around this
+              site for references for my current work and progress within the
+              beautiful world of web development!
             </p>
 
             <h2 className="text-2xl text-gray-900 font-bold mb-2 mt-[3%]">
@@ -37,14 +37,14 @@ const About = () => {
             </h2>
             <p className="text-gray-900">
               While my experience is limited, having never worked in the tech
-              industry, I did graduate from the University of Utah fuhll stack
-              web development bootcamp. I have learned a lot about coding and
-              web development in the past 6 months and am excited to continue
-              learning and growing in the field. Through the bootcamp, I have
-              experience with HTML, CSS, JavaScript, Node.js, Express.js, MySQL,
-              MongoDB, React, and other technologies. I have also learned a lot
-              about working with others and collaborating on projects. I am
-              excited to continue learning and growing in the field and am
+              industry, I recently graduated from the University of Utah full
+              stack web development bootcamp. I have learned a lot about coding
+              and web development in the past 6 months and am excited to
+              continue learning and growing in the field. Through the bootcamp,
+              I have experience with HTML, CSS, JavaScript, Node.js, Express.js,
+              MySQL, MongoDB, React, and other technologies. I have also learned
+              a lot about working with others and collaborating on projects. I
+              am excited to continue learning and growing in the field and am
               excited to see where my career takes me!
             </p>
           </section>

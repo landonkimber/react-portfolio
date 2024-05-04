@@ -22,7 +22,7 @@ function Contact() {
             <div className="flex flex-col space-y-6">
               <a
                 href="mailto:landonkimber33@gmail.com"
-                className="flex items-center text-gray-600 hover:text-blue-500 text-xl"
+                className="flex items-center text-gray-600 hover:text-green-500 text-xl"
               >
                 <FaEnvelope size={32} className="mr-4" />
                 <span>Email</span>
@@ -43,7 +43,7 @@ function Contact() {
               </a>
               <a
                 href="https://linkedin.com/"
-                className="flex items-center text-gray-600 hover:text-blue-600 text-xl"
+                className="flex items-center text-gray-600 hover:text-sky-500 text-xl"
               >
                 <FaLinkedin size={32} className="mr-4" />
                 <span>LinkedIn</span>
