@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Molle";
+  src: url("../src/assets/fonts/Molle-Italic.ttf") format("truetype");
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-10vh);
+  }
+}
+
+.animate-bubble {
+  animation: bubble linear infinite;
+}
